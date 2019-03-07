@@ -45,6 +45,9 @@ NETWORK_LFCW1A2 = "lfcW1A2"
 
 if os.environ['BOARD'] == 'Ultra96':
 	PLATFORM="ultra96"
+# Another hack, hahaha:
+elif os.environ['BOARD'] == 'ZCU104':
+	PLATFORM="ultra96"
 elif os.environ['BOARD'] == 'Pynq-Z1' or os.environ['BOARD'] == 'Pynq-Z2':
 	PLATFORM="pynqZ1-Z2"
 else:
