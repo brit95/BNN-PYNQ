@@ -36,6 +36,11 @@ import os
 from glob import glob
 import site 
 
+#Very hacky workaround
+print("os.environ['BOARD']={}".format(os.environ['BOARD']))
+print("Changing to 'Ultra96'")
+os.environ['BOARD'] = 'Ultra96'
+
 if os.environ['BOARD'] != 'Ultra96' and os.environ['BOARD'] != 'Pynq-Z1' and os.environ['BOARD'] != 'Pynq-Z2':
 	print("Only supported on a Ultra96, Pynq-Z1 or Pynq-Z2 Board")
 	exit(1)
